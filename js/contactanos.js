@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/api/contactanos"; //Cambiar por ip del servidor en caso la db este en otra maquina.
+const url = "http://34.193.52.0:3000/api/contactanos"; //Cambiar por ip del servidor en caso la db este en otra maquina. (34.193.52.0/)
 
 const formContactanos = document.getElementById("formulario-contactanos");
 const nombre = document.getElementById("nombre");
