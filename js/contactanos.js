@@ -1,4 +1,4 @@
-const url = "http://34.193.52.0:3000/api/contactanos"; //Cambiar por ip del servidor
+const url = "http://localhost:3000/api/contactanos"; //Cambiar por ip del servidor en caso la db este en otra maquina.
 
 const formContactanos = document.getElementById("formulario-contactanos");
 const nombre = document.getElementById("nombre");
@@ -30,10 +30,9 @@ formContactanos.addEventListener('submit',
                 )
             };
 
-            console.log('configuracion: ', configuracion);
             fetch(url, configuracion)
                 .then(response => {
-                    console.log('RESPONSE :', response);
+                    // console.log('Respuesta del servidor: ', response);
                     response.json();
                     mostrarMensajeCorrecto();
                     limpiarCampos();

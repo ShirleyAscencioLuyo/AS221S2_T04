@@ -2,15 +2,13 @@ var express = require("express");
 var mysql = require("mysql");
 var app = express();
 var cors = require("cors");
-const path = require('path');
 
 app.use(express.json());
 app.use(cors());
-app.use(express.static(path.join(__dirname, '../css')));
 app.use(express.static(__dirname + '/'));
 
 var conexion = mysql.createConnection({
-  host: "34.193.52.0",
+  host: "localhost",
   user: "root",
   password: "admin",
   database: "db_landing_page"
