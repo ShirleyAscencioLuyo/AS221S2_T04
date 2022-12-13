@@ -18,23 +18,8 @@ $linksNav.forEach((linkNav) => {
    })
 })
 
-/* SKILLS BUTTONS */
-const $skillButtons = document.querySelectorAll(".skill-button")
 
-function selectSkill() {
-   let $skillActive = this
-   if ($skillActive.classList.contains("-active")) {
-      $skillActive.classList.remove("-active")
-   } else {
-      $skillActive.classList.add("-active")
-   }
-}
-
-$skillButtons.forEach((skillItem) => {
-   skillItem.addEventListener("click", selectSkill)
-})
-
-/* QUALIFICATION TABS */
+/* trayectoria Pestaña*/
 const $tabQualification = document.querySelectorAll(".qualification-button")
 let $tabActive = document.querySelector(".qualification-button.-active")
 
@@ -56,7 +41,7 @@ $tabQualification.forEach((tabItem) => {
    tabItem.addEventListener("click", selectQualification)
 })
 
-/* SERVICES MODAL */
+/* FFormatos y testimonios */
 const $cardButtons = document.querySelectorAll(".card-button")
 const $serviceModals = document.querySelectorAll(".service-modal")
 const $closeModals = document.querySelectorAll(".modal-close")
@@ -79,7 +64,7 @@ $closeModals.forEach((closeModal) => {
    })
 })
 
-/* PORTFOLIO CAROUSEL */
+/* Carrusel de profesores */
 const $profesoresCarousel = document.querySelector(".glide.portfolio-carousel.profesores")
 
 new Glide($profesoresCarousel, {
@@ -92,7 +77,7 @@ new Glide($profesoresCarousel, {
    animationDuration: 1000
 }).mount()
 
-/* PORTFOLIO CAROUSEL */
+/* Carrusel de profesores */
 const $portfolioCarousel = document.querySelector(".glide.portfolio-carousel")
 
 new Glide($portfolioCarousel, {
@@ -105,7 +90,7 @@ new Glide($portfolioCarousel, {
    animationDuration: 1000
 }).mount()
 
-/* TESTIMONIAL CAROUSEL */
+/* testimonios carrusel */
 const $testimonialCarousel = document.querySelector(".glide.testimonial-carousel")
 
 new Glide($testimonialCarousel, {
@@ -132,7 +117,7 @@ new Glide($testimonialCarousel, {
    }
 }).mount()
 
-/* SCROOL EVENT */
+/* scroll evento */
 const scrollEvent = () => {
    const $header = document.querySelector(".header")
    const $btnToTop = document.querySelector(".btn-totop")
@@ -152,7 +137,7 @@ const scrollEvent = () => {
 
 window.addEventListener("scroll", scrollEvent)
 
-/* SMOOTH SCROLL SECTION ACTIVE */
+/* Sseccion de desplazamiento suave activada */
 const $sections = document.querySelectorAll(".section[id]")
 
 let sectionActive = () => {
@@ -173,7 +158,7 @@ let sectionActive = () => {
 
 window.addEventListener("scroll", sectionActive)
 
-/* DARK/LIGHT THEME */
+/* oscuro/claro Tema */
 const $themeButton = document.querySelector(".theme-button")
 const $body = document.body
 const $themeActive = window.localStorage.getItem("theme")
