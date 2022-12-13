@@ -1,0 +1,185 @@
+/*=== FORMATOS PEDAGOGICOS START ===*/
+
+.services>.container>.services-wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 22rem);
+    column-gap: 2rem;
+    row-gap: 2.4rem;
+ }
+ 
+ @media screen and (min-width: 610px) {
+    .services>.container>.services-wrap {
+       column-gap: 2.4rem;
+    }
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .services>.container>.services-wrap {
+       max-width: 80rem;
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-rows: 30rem;
+       margin: 0 auto;
+    }
+ }
+ 
+ .services>.container>.services-wrap>.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5.7rem 2.5rem 2.5rem;
+    background-color: var(--background-color);
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 6px 3px var(--shadow-color);
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .services>.container>.services-wrap>.service-card {
+       padding: 11.8rem 4rem 4rem;
+    }
+ }
+ 
+ .services>.container>.services-wrap>.service-card>.card-icon>path {
+    fill: var(--first-color);
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .services>.container>.services-wrap>.service-card>.card-icon {
+       width: 2.5rem;
+       height: auto;
+    }
+ }
+ 
+ .services>.container>.services-wrap>.service-card>.card-title {
+    font-size: 1.8rem;
+    font-weight: var(--semi-font);
+    color: var(--title-color);
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .services>.container>.services-wrap>.service-card>.card-title {
+       font-size: 2.1rem;
+    }
+ }
+ 
+ 
+ .services>.container>.services-wrap>.service-card>.card-button {
+    font-family: var(--first-font);
+    font-size: 1.3rem;
+    color: var(--first-color);
+    background-color: transparent;
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .services>.container>.services-wrap>.service-card>.card-button {
+       font-size: 1.5rem;
+       cursor: pointer;
+    }
+ 
+    .services>.container>.services-wrap>.service-card>.card-button>svg {
+       transform: translateX(0);
+       transition: transform .3s;
+    }
+ 
+    .services>.container>.services-wrap>.service-card>.card-button:hover>svg {
+       transform: translateX(30%);
+       transition: transform .3s;
+    }
+ }
+ 
+ .services>.container>.services-wrap>.service-card>.card-button>svg {
+    margin-left: 0.5rem;
+ }
+ 
+ .services>.container>.services-wrap>.service-card>.card-button>svg path {
+    fill: var(--first-color);
+ }
+ 
+ .services>.container>.services-wrap>.service-card>.service-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: auto;
+    background-color: rgba(35, 35, 35, 0.8);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+ }
+ 
+ .services>.container>.services-wrap>.service-card>.service-modal.-active {
+    visibility: visible;
+    opacity: 1;
+    scroll-behavior: unset;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+ }
+ 
+ .services>.container>.services-wrap>.service-card>.service-modal>.modal-content {
+    width: 30.7rem;
+    height: 26.5rem;
+    border-radius: 1rem;
+    padding: 2.4rem 2rem 2.4rem 2.4rem;
+    background-color: var(--background-color);
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .services>.container>.services-wrap>.service-card>.service-modal>.modal-content {
+       width: 46.5rem;
+       height: 29rem;
+    }
+ }
+ 
+ .services>.container>.services-wrap>.service-card>.service-modal>.modal-content>.title {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: var(--semi-font);
+    color: var(--title-color);
+    margin-bottom: 1.8rem;
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .services>.container>.services-wrap>.service-card>.service-modal>.modal-content>.title {
+       font-size: 2.1rem;
+    }
+ }
+ 
+ .services>.container>.services-wrap>.service-card>.service-modal>.modal-content>.modal-close {
+    display: block;
+    float: right;
+    padding: 0 0 2rem 2rem;
+    background-color: transparent;
+ }
+ 
+ .services>.container>.services-wrap>.service-card>.service-modal>.modal-content>.service-list {
+    width: 100%;
+ }
+ 
+ .services>.container>.services-wrap>.service-card>.service-modal>.modal-content>.service-list>.item {
+    font-size: 1.5rem;
+    font-weight: var(--medium-font);
+    line-height: 2.6;
+    color: var(--text-color-light);
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .services>.container>.services-wrap>.service-card>.service-modal>.modal-content>.service-list>.item {
+       font-size: 1.6rem;
+    }
+ }
+ 
+ .services>.container>.services-wrap>.service-card>.service-modal>.modal-content>.service-list>.item>.icon>path {
+    fill: var(--first-color);
+ }
+ 
+ /*=== FROMATOS PEDAGOGICOS END ===*/
+ 

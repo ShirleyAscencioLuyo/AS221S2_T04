@@ -1,0 +1,147 @@
+/*=== CONTACTANOS START ===*/
+
+.contactme>.container>.contactme-contacts {
+    width: 100%;
+    margin-bottom: 4rem;
+ }
+ 
+ @media screen and (min-width: 610px) {
+    .contactme>.container>.contactme-contacts {
+       align-self: flex-start;
+       margin: 0;
+    }
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .contactme>.container>.contactme-contacts {
+       width: 75%;
+       align-self: flex-start;
+       margin: 0;
+    }
+ }
+ 
+ .contactme>.container>.contactme-contacts>.contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 3.5rem;
+ }
+ 
+ .contactme>.container>.contactme-contacts>.contact>.icon {
+    margin-right: 1.6rem;
+ }
+ 
+ .contactme>.container>.contactme-contacts>.contact>.icon>path {
+    fill: var(--first-color);
+ }
+ 
+ .contactme>.container>.contactme-contacts>.contact>.data>.title {
+    font-size: 1.8rem;
+    color: var(--title-color);
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .contactme>.container>.contactme-contacts>.contact>.data>.title {
+       font-size: 2.1rem;
+    }
+ }
+ 
+ .contactme>.container>.contactme-contacts>.contact>.data>.subtitle {
+    font-size: 1.3rem;
+    color: var(--text-color-light);
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .contactme>.container>.contactme-contacts>.contact>.data>.subtitle {
+       font-size: 1.4rem;
+    }
+ }
+ 
+ .contactme>.container>.contactme-form {
+    width: 100%;
+    display: block;
+    padding: 0 0 10rem;
+ }
+ 
+ @media screen and (min-width: 610px) {
+    .contactme>.container>.contactme-form {
+       padding: 0 0 5rem;
+    }
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .contactme>.container>.contactme-form {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       column-gap: 2.4rem;
+       grid-template-areas: "name email"
+          "project project"
+          "message message"
+          "submit .";
+    }
+ }
+ 
+ .contactme>.container>.contactme-form>.contactme-field {
+    width: 100%;
+    height: 7.3rem;
+    background-color: var(--input-color);
+    border-radius: 1rem;
+    padding: 1.6rem;
+    margin-bottom: 2.4rem;
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .contactme>.container>.contactme-form>.contactme-field {
+       height: 8rem;
+    }
+ 
+    .contactme>.container>.contactme-form>.contactme-field.-name {
+       grid-area: name;
+    }
+ 
+    .contactme>.container>.contactme-form>.contactme-field.-email {
+       grid-area: email;
+    }
+ 
+    .contactme>.container>.contactme-form>.contactme-field.-project {
+       grid-area: project;
+    }
+ }
+ 
+ .contactme>.container>.contactme-form>.contactme-field.-message {
+    height: auto;
+    grid-area: message;
+ }
+ 
+ .contactme>.container>.contactme-form>.contactme-field>.label {
+    font-size: 1.2rem;
+    font-weight: var(--medium-font);
+    color: var(--text-color-light);
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .contactme>.container>.contactme-form>.contactme-field>.label {
+       font-size: 1.4rem;
+    }
+ }
+ 
+ .contactme>.container>.contactme-form>.contactme-field>.input {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: var(--medium-font);
+    line-height: 1.5;
+    color: var(--text-color);
+    border: none;
+    overflow: hidden;
+    padding: 0.5rem;
+    background-color: transparent;
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .contactme>.container>.contactme-form>.-submit {
+       grid-area: submit;
+       width: 80%;
+    }
+ }
+ 
+ /*=== CONTACTANOS END ===*/

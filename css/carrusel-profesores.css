@@ -1,0 +1,192 @@
+/*===INICIO: Carrusel de profesores ===*/
+
+.portfolio>.container {
+    margin-bottom: 6rem;
+ }
+ 
+ .portfolio>.container>.portfolio-carousel>.glide__track {
+    width: 26.6rem;
+    height: auto;
+    margin: 0 auto;
+ }
+ 
+ @media screen and (min-width: 610px) {
+    .portfolio>.container>.portfolio-carousel>.glide__track {
+       width: 90%;
+    }
+ }
+ 
+ @media screen and (min-width: 610px) {
+    .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide {
+       display: flex;
+       justify-content: center;
+    }
+ }
+ 
+ .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide>picture>img {
+    width: 100%;
+    height: 100%;
+    max-width: 26.5rem;
+    max-height: 17.6rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+ }
+ 
+ @media screen and (min-width: 610px) {
+    .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide>picture>img {
+       max-width: 24.4rem;
+       max-height: 16.3rem;
+    }
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide>picture>img {
+       max-width: 33.1rem;
+       max-height: 22rem;
+       margin-bottom: 4rem;
+       margin-right: 2rem;
+    }
+ }
+ 
+ .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide>.portfolio-content {
+    width: auto;
+    max-width: 26.6rem;
+    padding-bottom: 4.2rem;
+ }
+ 
+ @media screen and (min-width: 610px) {
+    .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide>.portfolio-content {
+       padding-left: 2.4rem;
+    }
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide>.portfolio-content {
+       max-width: 50%;
+       padding: 1rem 12rem 3rem 5rem;
+    }
+ }
+ 
+ .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide>.portfolio-content>.title {
+    font-size: 1.8rem;
+    font-weight: var(--semi-font);
+    color: var(--title-color);
+    margin-bottom: 0.8rem;
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide>.portfolio-content>.title {
+       font-size: 2.1rem;
+       margin-bottom: 1.6rem;
+    }
+ }
+ 
+ .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide>.portfolio-content>.description {
+    font-size: 1.6rem;
+    font-weight: var(--medium-font);
+    color: var(--text-color-light);
+    margin-bottom: 3rem;
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide>.portfolio-content>.description {
+       margin-bottom: 4rem;
+    }
+ }
+ 
+ .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide>.portfolio-content>.calltoaction {
+    padding: 1.6rem 2rem;
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide>.portfolio-content>.calltoaction {
+       font-size: 1.6rem;
+    }
+ 
+    .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide>.portfolio-content>.calltoaction>svg {
+       transform: translateX(0);
+       transition: .3s;
+    }
+ 
+    .portfolio>.container>.portfolio-carousel>.glide__track>.glide__slides>.glide__slide>.portfolio-content>.calltoaction:hover>svg {
+       transform: translateX(25%);
+       transition: .3s
+    }
+ }
+ 
+ .portfolio>.container>.portfolio-carousel>.glide__arrows {
+    position: absolute;
+    width: 100%;
+    max-width: 40rem;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-45%);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+ }
+ 
+ @media screen and (min-width: 610px) {
+    .portfolio>.container>.portfolio-carousel>.glide__arrows {
+       max-width: 100%;
+       top: 40%;
+       left: 50%;
+       transform: translateX(-50%) translateY(-40%);
+    }
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .portfolio>.container>.portfolio-carousel>.glide__arrows {
+       top: 50%;
+       transform: translateX(-50%) translateY(-50%);
+    }
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .portfolio>.container>.portfolio-carousel>.glide__arrows>.glide__arrow {
+       width: 2rem;
+       height: 3.4rem;
+    }
+ }
+ 
+ .portfolio>.container>.portfolio-carousel>.glide__arrows>.glide__arrow>path {
+    fill: var(--first-color);
+ }
+ 
+ .portfolio>.container>.portfolio-carousel>.glide__bullets {
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .portfolio>.container>.portfolio-carousel>.glide__bullets>.glide__bullet {
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    text-align: center;
+    text-indent: -999rem;
+    background-color: var(--first-color-lighter);
+ }
+ 
+ @media screen and (min-width: 1024px) {
+    .portfolio>.container>.portfolio-carousel>.glide__bullets>.glide__bullet {
+       width: 0.9rem;
+       height: 0.9rem;
+       cursor: pointer;
+    }
+ }
+ 
+ .portfolio>.container>.portfolio-carousel>.glide__bullets>.glide__bullet:not(:last-child) {
+    margin-right: 0.8rem;
+ }
+ 
+ .portfolio>.container>.portfolio-carousel>.glide__bullets>.glide__bullet:hover,
+ .portfolio>.container>.portfolio-carousel>.glide__bullets>.glide__bullet--active {
+    background-color: var(--first-color);
+ }
+ 
+ /*=== PORTFOLIO END ===*/
